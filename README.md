@@ -184,6 +184,10 @@ plt.xlabel('Days', fontsize= 16)
 plt.show()
 ```
 
+
+![png](index_files/index_14_0.png)
+
+
 You can see 10 subplots corresponding to the number of columns in your new DataFrame. Each plot is 365 days in length following the annual frequency.
 
 Now, plot the same plots in an overlapping way.
@@ -273,26 +277,8 @@ We can also plot distribution across months within each year. Perform the follow
 
 ```python
 # Use temp Dataset to extract values for 1990
-month_group =df['1990'].groupby(pd.Grouper(freq ='M')
+month_group =df['1990'].groupby(pd.Grouper(freq ='M'))
 ```
-
-
-
-
-    ['January',
-     'February',
-     'March',
-     'April',
-     'May',
-     'June',
-     'July',
-     'August',
-     'September',
-     'October',
-     'November',
-     'December']
-
-
 
 
 ```python
